@@ -1,0 +1,56 @@
+# Swift & Xcode
+.DS_Store
+*.xcuserdata
+*.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/.*
+
+# Build artifacts
+build/
+DerivedData/
+*.ipa
+*.app
+*.dSYM
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.xcuserstate
+*.xcuserdatad
+
+# CocoaPods
+Pods/
+podfile.lock
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# SPM
+.swiftpm
+Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/report.json
+
+# IDEs
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
