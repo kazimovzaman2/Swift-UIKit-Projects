@@ -15,6 +15,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var commentText: UITextField!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var saveButton: UIButton!
 
     var locationManager = CLLocationManager()
     var chosenLatitude = Double()
@@ -42,6 +43,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.addGestureRecognizer(gestureRecognizer)
         
         if selectedTitle != "" {
+            
+            saveButton.isHidden = true
+
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
@@ -96,7 +100,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             
             
         } else {
-            // Add New Data
+            saveButton.isHidden = false
+            nameText.text = ""
+            commentText.text = ""
         }
     }
     

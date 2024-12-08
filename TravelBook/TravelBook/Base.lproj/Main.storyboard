@@ -106,6 +106,7 @@
                         <outlet property="commentText" destination="xY1-xP-YBp" id="wt8-Me-T7e"/>
                         <outlet property="mapView" destination="QbJ-7A-kwe" id="g5f-qG-Fpf"/>
                         <outlet property="nameText" destination="SqH-Hq-gxu" id="Gmn-ho-tCh"/>
+                        <outlet property="saveButton" destination="MhP-Ou-7yy" id="kNf-rg-LKy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
