@@ -1,0 +1,49 @@
+//
+//  FavoriteModel.swift
+//  FavoriteBook
+//
+//  Created by Zaman Kazimov on 16.12.24.
+//
+
+
+import Foundation
+
+
+struct FavoriteModel: Identifiable {
+    var id = UUID()
+    var title: String
+    var elements: [FavoriteElements]
+}
+
+
+
+struct FavoriteElements: Identifiable {
+    var id = UUID()
+    var name: String
+    var imagename: String
+    var description: String
+}
+
+// Bands
+
+let metallica = FavoriteElements(name: "Metallica", imagename: "compresed", description: "No 1 Music Band")
+let megadeth = FavoriteElements(name: "Megadeth", imagename: "compresed", description: "No 2 Music Band")
+let ironmaide = FavoriteElements(name: "Iron Maiden", imagename: "compresed", description: "No 3 Music Band")
+
+let favoriteBands = FavoriteModel(title: "Favorite Bands", elements: [metallica, megadeth, ironmaide])
+
+
+// Movies
+
+let pulpfiction = FavoriteElements(name: "Pulp Fiction", imagename: "compresed", description: "No 1 Movie")
+let thedarkknight = FavoriteElements(name: "The Dark Knight", imagename: "compresed", description: "No 2 Movie")
+let killbill = FavoriteElements(name: "Kill Bill", imagename: "compresed", description: "No 3 Movie")
+
+let favoriteMovies = FavoriteModel(title: "Favorite Movies", elements: [pulpfiction, thedarkknight, killbill])
+
+
+
+
+
+let myFavorites = [favoriteBands, favoriteMovies]
+
